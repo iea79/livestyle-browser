@@ -21,12 +21,15 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
+        working-directory: ./livestyle-browser
         run: |
           yarn install --frozen-lockfile || yarn install
 
       - name: Build CRX
+        working-directory: ./livestyle-browser
         run: yarn build
 
       - name: Build unpacked extension
+        working-directory: ./livestyle-browser
         run: yarn build:unpacked
 
