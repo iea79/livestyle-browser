@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            body {
+                width: 200px;
+                margin: 0;
+                padding: 14px;
+                font-family: system-ui, sans-serif;
+                font-size: 13px;
+            }
+            h2 {
+                margin: 0 0 10px;
+                font-size: 14px;
+            }
+            button {
+                width: 100%;
+                padding: 10px;
+                cursor: pointer;
+                border: none;
+                border-radius: 6px;
+                font-size: 13px;
+            }
+            .btn-on {
+                background: #0078d4;
+                color: #fff;
+            }
+            .btn-on:hover {
+                background: #106ebe;
+            }
+            .btn-off {
+                background: #555;
+                color: #fff;
+            }
+            .btn-off:hover {
+                background: #333;
+            }
+            .status {
+                margin: 8px 0;
+                font-size: 12px;
+                color: #666;
+            }
+            .status.ok {
+                color: #107c10;
+            }
+            .hint {
+                font-size: 11px;
+                color: #666;
+                margin: 4px 0 10px;
+            }
+            a {
+                font-size: 12px;
+                color: #0078d4;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>LiveStyle Sync</h2>
+        <div
+            id="status"
+            class="status"
+        >
+            Загрузка…
+        </div>
+        <p class="hint">Включите синхронизацию на вкладке, куда нужно слать стили. Работает только на этой вкладке до закрытия или выключения.</p>
+        <button
+            id="toggle"
+            class="btn-off"
+        >
+            Включить синхронизацию
+        </button>
+        <p style="margin: 12px 0 0">
+            <a
+                href="#"
+                id="options"
+                >Настройки</a
+            >
+        </p>
+        <script src="popup.js"></script>
+    </body>
+</html>

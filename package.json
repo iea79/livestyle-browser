@@ -1,0 +1,9 @@
+{
+  "name": "livestyle-sync",
+  "version": "0.1.1",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf dist && mkdir -p dist && crx3 . -p .crx-key.pem -o dist/livestyle-sync.crx",
+    "build:unpacked": "node scripts/build-unpacked.js"
+  }
+}

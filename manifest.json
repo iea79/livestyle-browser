@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "LiveStyle Sync",
+  "version": "0.1.3",
+  "description": "Принимает CSS из редактора (Cursor/VS Code) и подставляет в страницу",
+  "permissions": ["activeTab", "scripting", "storage", "tabs", "offscreen"],
+  "host_permissions": ["ws://localhost/*", "ws://127.0.0.1/*", "http://localhost/*", "http://*/*", "https://*/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

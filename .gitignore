@@ -1,0 +1,8 @@
+browser.zip
+node_modules/
+dist/
+dist-unpacked/
+*.crx
+*.vsix
+yarn-error.log
+.crx-key.pem

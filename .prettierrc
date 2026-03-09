@@ -1,0 +1,9 @@
+{
+  "tabWidth": 4,
+  "endOfLine": "auto",
+  "printWidth": 200,
+  "useEditorConfig": false,
+  "singleQuote": true,
+  "singleAttributePerLine": true,
+  "requireConfig": true
+}
